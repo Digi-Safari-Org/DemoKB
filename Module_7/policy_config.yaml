@@ -26,3 +26,4 @@ copilot_enterprise_policy:
       allow_repos: ["learning-sandbox"]
       block_repos: ["*"]
       exclude_paths: ["/private/"]
+      

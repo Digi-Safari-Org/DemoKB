@@ -61,8 +61,4 @@ You must produce the following files:
 
 ---
 
-## Evaluation
-- Policies reflect the described rules.
-- License allocation respects priority and seat limits.
-- Telemetry logs contain both allowed and blocked examples.
-- Role change request template is clear, complete, and consistent.
+#
