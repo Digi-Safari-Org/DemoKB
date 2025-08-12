@@ -1,0 +1,13 @@
+# We have 50 Copilot licenses.
+# Allocate by priority: Org_Admin > Senior_Dev > Junior_Dev > External_Contractor.
+# Assign: 5 to Org_Admin, 25 to Senior_Dev, 15 to Junior_Dev, 0 to External_Contractor.
+# Show remaining seats.
+
+
+copilot_license_allocation:
+  Org_Admin: 5
+  Senior_Dev: 25
+  Junior_Dev: 15
+  External_Contractor: 0
+  remaining_seats: 5
+  1

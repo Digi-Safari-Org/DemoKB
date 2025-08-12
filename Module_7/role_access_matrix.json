@@ -1,0 +1,32 @@
+
+
+[
+  {
+    "role": "Org_Admin",
+    "copilot_enabled": true,
+    "allowed_repos": ["*"],
+    "blocked_repos": [],
+    "content_exclusions": ["/private/"]
+  },
+  {
+    "role": "Senior_Dev",
+    "copilot_enabled": true,
+    "allowed_repos": ["*"],
+    "blocked_repos": ["finance-reports", "security-audit"],
+    "content_exclusions": ["/private/"]
+  },
+  {
+    "role": "Junior_Dev",
+    "copilot_enabled": true,
+    "allowed_repos": ["learning-sandbox"],
+    "blocked_repos": ["*"],
+    "content_exclusions": ["/private/"]
+  },
+  {
+    "role": "External_Contractor",
+    "copilot_enabled": false,
+    "allowed_repos": [],
+    "blocked_repos": [],
+    "content_exclusions":[]
+  }
+]

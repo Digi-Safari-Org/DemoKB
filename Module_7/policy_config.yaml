@@ -1,0 +1,28 @@
+
+# Generate a YAML policy config for GitHub Copilot Enterprise with these roles:
+# - Org_Admin: all repos allowed, no blocks, /private/ excluded
+# - Senior_Dev: block finance-reports, security-audit, /private/ excluded
+# - Junior_Dev: allow learning-sandbox only, block all others, /private/ excluded
+# - External_Contractor: Copilot disabled
+# Enable telemetry and prompt audit globally.
+
+copilot_enterprise_policy:
+  global:
+    telemetry_enabled: true
+    prompt_audit_enabled: true
+
+  roles:
+    Org_Admin:
+      allow_repos: ["*"]
+      block_repos: []
+      exclude_paths: ["/private/"]
+
+    Senior_Dev:
+      allow_repos: ["*"]
+      block_repos: ["finance-reports", "security-audit"]
+      exclude_paths: ["/private/"]
+
+    Junior_Dev:
+      allow_repos: ["learning-sandbox"]
+      block_repos: ["*"]
+      exclude_paths: ["/private/"]
